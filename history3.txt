@@ -1,0 +1,1000 @@
+cd pb
+ll
+vi person.pb.go 
+cd ~go
+cd ~
+ll
+cd go/
+ll
+cd src/
+ll
+cd iHome/
+ll
+cd day01/
+ll
+cd pb/
+ll
+protoc --go_out=./ myproto.proto 
+ll
+protoc -h
+protoc --go_out=./ *.proto
+ll
+vi myproto.proto 
+protoc --go_out=./ *.proto
+ll
+vi myproto.pb.go 
+ll
+cd ..
+ll
+go get -u -v google.golang.org/grpc
+ping 172.18.160.57
+ping 192.168.70.1
+go get -u -v google.golang.org/grpc
+ll
+env | grep -i proxy
+cd ..
+ll
+cd ..
+ll
+git clone https://github.com/grpc/grpc-go.git      $GOPATH/src/google.golang.org/grpc
+git clone https://github.com/grpc/grpc-go.git 
+ll
+cd google.golang.org/
+ll
+cd ..
+cd github.com/
+ll
+cd golang/
+ll
+cd po
+cd protobuf/
+ll
+cd ..
+ll
+git clone https://github.com/grpc/grpc-go.git      $GOPATH/src/google.golang.org/grpc
+git clone https://github.com/golang/net.git        $GOPATH/src/golang.org/x/net
+git clone https://github.com/golang/text.git        $GOPATH/src/golang.org/x/text
+git clone https://github.com/google/go-genproto.git  $GOPATH/src/google.golang.org/genproto
+ll
+cd google.golang.org/
+ll
+cd grpc/
+ll
+cd ..
+ll
+cd ..
+ll
+cd golang.org/
+ll
+cd x
+ll
+cd ..
+ll
+git clone https://github.com/google/go-genproto.git  $GOPATH/src/google.golang.org/genproto
+ll
+cd google.golang.org/
+ll
+cd grpc/
+go install google.golang.org/grpc
+clear
+ll
+clear
+cd ../../
+ll
+cd iHome/
+kk
+ll
+cd day01/
+ll
+cd pb
+ll
+vi myproto.proto 
+ll
+protoc --go_out=plugins=grpc:./ myproto.proto 
+ll
+vi myproto.pb.go 
+l
+ll
+protoc --go_out=plugins=grpc:./ person.proto 
+ll
+vi person.pb.go 
+vi person.proto 
+vi person.pb.go 
+cd ..
+ll
+cd ..
+ll
+cd src/
+ll
+cd iHome/
+ll
+cd day01/
+ll
+cd ..
+ll
+cd day01/
+ll
+cd pb/
+ll
+rm -rf *.pb.go 
+ll
+cd ~
+ll
+cd go/
+ll
+cd src/
+cd ../bin/
+ll
+cd /b
+cd /bin/
+ll
+cp protoc-gen-go ../home/my/go/bin/
+ll
+cd /home/my/go/bin/
+ll
+rm -rf protoc-gen-go 
+ping 172.18.160.57
+ifconfig 
+ping 172.18.160.57
+ll
+env | grep -i proxy
+ping 172.18.160.57
+sudo ufw status 
+ip addr
+ll
+cd /usr/
+cd bin/
+ll
+cd ..
+ll
+cd ..
+ll
+cd ~
+ll
+wget https://releases.hashicorp.com/consul/1.5.2/consul_1.5.2_linux_amd64.zip
+ll
+mv consul_1.5.2_linux_amd64.zip /opt/
+sudo mv consul_1.5.2_linux_amd64.zip /opt/
+ll
+cd /opt/
+ll
+unzip consul_1.5.2_linux_amd64.zip 
+ll
+sudo unzip consul_1.5.2_linux_amd64.zip 
+ll
+clear
+ll
+sudo mv /usr/local/bin/
+sudo mv consul /usr/local/bin/
+cd /usr/local/bin/
+ll
+consul -h
+protoc -h
+consul -h
+ip addr
+ping 172.18.160.57
+ifconfig 
+ping 172.18.160.57
+ping 192.168.19.1
+ping 192.168.70.1
+ping www.baidu.com
+ping 172.18.160.57
+ip addrt
+ip addr
+ping 172.18.160.57
+consul members
+consul info
+consul leave
+ll
+cd /etc/consul.d/
+ll
+ls
+sudo vi web.json
+cd /etc/consul.d/
+ls
+sudo vi web.json
+ls
+sudo vi web.json 
+LS
+ls
+cat web.json 
+sudo vi web.json 
+cat web.json 
+ls
+sudo vi check.json
+ls
+cat check.json 
+consul reload
+consul leave
+ll
+cd go/src/
+ll
+cd iHome/
+ll
+cd day0
+cd day02
+ll
+cd pb
+ll
+protoc --go_out=plugins=grpc=:./ person.proto 
+protoc --go_out=plugins=grpc:=./ person.proto 
+protoc --go_out=plugins=grpc:./ person.proto 
+ls
+ll
+protoc --go_out=plugins=grpc:./ person.proto 
+ls
+ll
+protoc -h
+protoc --go_out=plugins=grpc:./ *.proto
+ll
+cat person.proto 
+ll
+protoc --go_out=plugins=grpc:./ person.proto 
+ll
+grpc -h
+grpc
+clear
+ll
+ip addr
+ping 172.18.160.57
+sudo networkctl restart
+sudo service network restart
+sudo service network-manager restart 
+ip addr
+ping 172.18.160.57
+consul -h
+cd /tmp/
+ll
+cd /opt/
+ll
+cd docker/
+kk
+ll
+cd ..
+ll
+cd /tmp/
+ll
+consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul -node=n1 -bind=192.168.19.101 -ui -rejoin -config-dir=/etc/consul.d/ -client 0.0.0.0
+cd /etc/
+ll
+touch consul.d
+sudo touch consul.d
+ll
+find consul.d
+consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul -node=n1 -bind=192.168.19.101 -ui -rejoin -config-dir=/etc/consul.d/ -client 0.0.0.0
+rm -rf consul.d 
+sudo rm -rf consul.d 
+sudo mkdir consul.d
+find consul.d/
+consul agent -server -bootstrap-expect 1 -data-dir /tmp/consul -node=n1 -bind=192.168.19.101 -ui -rejoin -config-dir=/etc/consul.d/ -client 0.0.0.0
+consul leave
+consul agent -dev
+ll
+cd go/src/iHome/
+ll
+cd day02
+ll
+cd server/
+ll
+go run sever.go 
+cd go/src/iHome/
+ll
+cd day02/
+ll
+cd server/
+ll
+go run deregister-sever.go 
+consul agent -dev
+ll
+micro
+protoc -h
+consul -h
+protoc -h
+micro -h
+micro new
+ll
+cd go/src/
+ll
+tree test/
+rm -rf test/
+micro new --type web hello
+ll
+rm -rf hello/
+cd go/src/
+ll
+cd iHome/
+ll
+cd day02
+ll
+cd client/
+ll
+go run client.go 
+ip addr
+cd /etc/
+ll
+cd consul.d/
+ll
+cat check.json 
+cd ..
+cd go/src/test/
+ll
+cat generate.go 
+micro
+micro new --type srv test
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+cd /usr/local/bin/
+ll
+cd ~
+cd go/src/test/
+ll
+cd ..
+ll
+cd iHome/
+ll
+cd day0
+cd day02
+ll
+cd server/
+ll
+go run sever.go 
+ll
+cd ..
+ll
+cd pb/
+ll
+rm -rf person.pb.go 
+ll
+proto --go_out=plugins=grpc./ person.proto 
+protoc --go_out=plugins=grpc./ person.proto 
+protoc --go_out=plugins=grpc:./ person.proto 
+ll
+cd ..
+ll
+cd day01/
+;;
+ll
+cd pb/
+ll
+rm -rf person.pb.go 
+ll
+protoc --go_out=plugins=grpc:./ person.proto 
+ll
+cd go/src/
+ll
+cd iHome/
+ll
+cd day02
+ll
+cd server/
+ll
+cat sever.go 
+clear
+ll
+go run sever.go 
+cat sever.go 
+l
+go run sever.go 
+clear
+ll
+cd ..
+ll
+cd server/
+ll
+go run sever.go 
+ll
+go run sever.go 
+ll
+protoc -h
+consul -h
+micro
+ll
+cd /
+ll
+cd ~
+cd go/src/
+ll
+rm -rf cloudstorage/
+ll
+cd github.com/
+kk
+ll
+cd golang/
+ll
+cd protobuf/
+ll
+cd ..
+ll
+cd ..
+ll
+cd golang.org/
+ll
+cd x/
+ll
+cd ..
+ll
+cd google.golang.org/
+ll
+cd ..
+ll
+cd ..
+ll
+cd pkg/
+ll
+cd mod/
+ll
+cd github.com/
+kk
+ll
+cd mitchellh/
+cd ..
+ll
+cd ~
+cd go/src/iHome/
+ll
+go get github.com/micro/go-micro
+go get github.com/micro/micro
+micro
+micro new --type srv test
+ll
+cd ..
+ll
+rm -rf
+ll
+micro -h
+ll
+rm -rf test/
+ll
+consul agent dev
+consul agent -dev
+ll
+cd go/
+kk
+ll
+cd src/
+ll
+cd I
+cd IHome/
+ll
+cd web/
+ll
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+cd bin/
+ll
+cd ..
+ll
+cd pkg/
+ll
+cd mod/
+ll
+cd ..
+ll
+cd ..
+ll
+cd src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+go run main.go 
+micro -h
+micro new --type web test
+ll
+cd go/src/
+ll
+rm -rf test/
+ll
+rm -rf iHome/
+ll
+cd github.com/
+ll
+cd hyperledger/
+ll
+cd ..
+ll
+cd ..
+ll
+cd github.com/
+ll
+cd ..
+ll
+cd go
+ll
+rm -rf ./g*
+ll
+cd ..
+ll
+cd bin/
+ll
+cd ..
+ll
+cd pkg/
+ll
+cd ..
+ll
+go env
+set GO111MODULE on
+ll
+go env
+ll
+vi /etc/profile
+ll
+docker images
+docker rmi ef07516a0c3d
+docker branch -a
+docker ps -a
+docker stop $(docker ps -qa)
+docker rm $(docker ps -qa)
+docker ps -a
+docker rmi hyperledger/*
+docker images
+docker rmi hyperledger/fabric-ca:
+docker rmi hyperledger/fabric-ca:1.2.0 
+docker images
+docker rmi 3ef8adde2235 
+docker rmi hyperledger/fabric-
+docker rmi ef07516a0c3d 
+docker images
+docker rmi 66cc132bd09c
+docker rmi 379602873003
+docker rmi 6acf31e2d9a4
+docker rmi 82c262e65984
+docker rmi 52190e831002
+docker images
+docker rmi 379602873003 6acf31e2d9a4
+docker rmi -f 379602873003 6acf31e2d9a4
+docker images
+docker rmi -f 4baf7789a8ec 82c262e65984 2b51158f3898 936aef6db0e6 3092eca241fc
+docker images
+ll
+docker version
+ll
+cd bin/
+consul -h
+protoc -h
+cd ..
+ll
+cd src/
+ll
+rm -rf ./go.mod 
+ll
+mkdir IHome
+ll
+cd IHome/
+ll
+cd web/
+ll
+go run main.go 
+ping 172.18.64.180
+ll
+cd go snap/
+cd src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+cd view/
+ll
+cd ..
+ll
+cat main.go 
+ll
+cd controller/
+ll
+cd ..
+ll
+ip addr
+env | grep -i proxy
+ipconfi
+ip addr
+ll
+cd go/src/
+ll
+cd IHome/
+kk
+ll
+cd web/
+ll
+go run main.go 
+ll
+go run main.go 
+ll
+cd ..
+ll
+cd server/
+ll
+cd getCaptcha/
+ll
+make
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+make 
+cd ..
+ll
+make 
+make proto
+protoc -h
+cd ..
+cd getCaptcha/
+ll
+make
+go get -u github.com/micro/protoc-gen-micro
+make
+go get -u github.com/golang/protobuf
+go get github.com/micro/go-micro
+make
+ll
+cd ...
+ll
+make
+ll
+cd server/
+ll
+cd getCaptcha/
+;;
+ll
+cd ..
+ll
+cd ..
+ll
+rm -rf server/
+ll
+cd proto/
+ll
+cd ..
+ll
+make
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+make 
+cd ..
+ll
+make proto 
+make proto/ 
+make proto
+ll
+$GOPTAH
+echo $GOPATH
+make proto
+ll
+make
+ll
+cd server/
+ll
+cd getCaptcha/
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+rm -rf
+ll
+rm -rf server/
+ll
+make
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+cd go/bin/
+ll
+sudo vi /etc/profile
+ll
+consul -h
+ll
+cd go/src/
+;;
+ll
+cd IHome/
+;;
+ll
+cd server/
+;;
+ll
+cd getCaptcha/
+ll
+cd ..
+;;
+ll
+rm -rf getCaptcha/
+ll
+cd ..
+ll
+cd ..
+ll
+cd IHome/
+ll
+cd server/
+ll
+cd ..
+ll
+cd web/
+ll
+cd ..
+ll
+cd server/
+ll
+cd getCaptcha/
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+cd getCaptcha/
+ll
+make
+ll
+cd proto/
+ll
+cd getCaptcha/
+ll
+go get -u github.com/golang/protobuf/{proto,protoc-gen-go}
+go get github.com/micro/go-micro
+go get github.com/micro/go-plugins
+cd go/
+ll
+cd src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+cd view/
+ll
+cd html/
+ll
+pwd
+ip addr
+ll
+cd go/src/
+;;
+ll
+cd IHome/
+ll
+cd server/
+ll
+cd getCaptcha/
+ll
+cd ..
+cd getCaptcha/
+;;
+ll
+go run main.go 
+LL
+ll
+go run main.go 
+consul agent -dev
+cd ll
+cd go/
+ll
+cd src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+ls
+go run main.go 
+ll
+vi main.go 
+go run main.go 
+ll
+vi main.go 
+go run main.go 
+vi main.go 
+go run main.go 
+vi main.go 
+go run main.go 
+cd 
+ll
+cd ~/go/src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+cd view/
+ll
+cd html/
+ll
+pwd
+cd ..
+ll
+cd ..
+ll
+vi main.go 
+go run main.go 
+ll
+vi main.go 
+go run main.go 
+ls
+cd /opt/
+ll
+cd docker/
+ll
+cd redis/
+ls
+cd conf/
+ls
+ll
+sudo vi redis.conf 
+consul agent -dev
+ll
+cd go/src/IHome/
+ll
+cd server/
+ll
+cd getCaptcha/
+ll
+rm -rf go.*
+ll
+go run main.go 
+cat main.go 
+l
+ll
+cd /opt/docker/
+ll
+cd redis/
+ll
+cd data/
+ll
+cd ..
+ll
+cd mysql/
+ll
+cd ,
+cd master/
+lll
+ll
+cd data/
+ll
+cd cloudstorage/
+lll
+cd ..
+ll
+cd ..
+ll
+cd ..
+ll
+cd redis/
+ll
+cd data/
+ll
+cd ..
+ll
+cd conf/
+ll
+sudo vi redis.conf 
+ll
+sudo vi redis.conf 
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker ps -qa
+docker ps -a
+docker images
+docker ps -q
+docker ps -a
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker rm $(docker ps -qa)
+docker ps -q
+docker ps -a
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker ps -a
+ps aux | grep redis
+docker rm $(docker ps -qa)
+ps aux | grep redis
+docker ps -a
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker ps -a
+docker start redis 
+docker ps -a
+docker rm $(docker ps -qa)
+ll
+sudo vi redis.conf 
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker ps -a
+ps aux | grep redis
+ps -ef | grep redis
+docker -it bash redis cli
+docker exec -it redis bash
+docker ps -a
+docker exec -it 3239f629e877 bash
+docker stop redis
+docker ps -a
+docker rm redis 
+docker ps -a
+ll
+sudo vi redis.conf 
+docker run --name redis -p 6379:6379 -v /opt/docker/redis/data:/data -v /opt/docker/redis/conf/redis.conf:/etc/redis/redis.conf -d redis:4.0 redis-server /etc/redis/redis.conf
+docker ps -a
+docker exec -it redis bash
+ll
+cd go/src/
+ll
+cd IHome/
+ll
+cd web/
+ll
+cd test/
+ll
+go run conn-redis.go 
+clear
+ll
+rm -rf captcha.go 
+rm -rf conn-redis.go 
+ll
+cd ..
+go run main.go 
+ll
+go run main.go 
+ifconfig 
+ping 172.18.160.57
+sudo apt update
+go version
+cd ~
+ssh -p 2200 foo@localhost 
+clear
+ls
+clear
+cd ~
+ls
+cd ..
+ls
+cd my/
+ls
+clear
+ll
+cd /
+ll
+clear
+cd ~/go/src/
+ls
+rm -rf IHome/
+ls
+clear
+ls
+cd sshhoney/
+ls
+ssh-keygne -t rsa
+ssh-keygen -t rsa
+ls
+vim main.go 
+ls
+go run main.go 
+ls
+rm -rf ./*
+ls
+clear
+cd ..
+ll
+rm -rf sshhoney/
+ls
+ls
+ssh -p 2200 foo@localhost 
+ip addr
+ls
+exit
